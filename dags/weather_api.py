@@ -73,7 +73,7 @@ def load(schema, table, data):
 
     create_querry = f'''
     create table if not exists {schema}.{table} (
-        date date primary key,
+        date date,
         temp float,
         min_temp float,
         max_temp float,

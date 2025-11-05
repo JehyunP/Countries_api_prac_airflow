@@ -127,5 +127,5 @@ with DAG(
     # ETL : request -> trnasform -> load
     result = request_api()
     trsfm = transform(result)
-    load(Variable.get('schema'), Variable.get('country_table'), trsfm)
+    load(Variable.get('schema'), 'countries_api', trsfm)
 
